@@ -34,6 +34,7 @@ export interface Configschema {
   };
   oengus: {
     defaultMarathon: string;
+    token?: string;
     useJapanese: boolean;
     disableSpeedrunComLookup: boolean;
   };

@@ -37,6 +37,9 @@ export interface SendMessageArgsMap {
 
   // Speedrun.com
   srcomSearchForUserDataMultiple: { type: 'name' | 'twitch', val: (string | undefined | null) }[];
+
+  // Oengus
+  updateOengusSchedule: any;
 }
 
 export interface SendMessageReturnMap {
@@ -68,6 +71,9 @@ export interface SendMessageReturnMap {
 
   // Speedrun.com
   srcomSearchForUserDataMultiple: UserData | undefined;
+
+  // Oengus
+  updateOengusSchedule: void;
 }
 
 export type SendMessageAck = HandledSendMessageAck | UnhandledSendMessageAck;
